@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class  Evencount
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("n:");
+		int n=sc.nextInt();
+		int count=0;
+		int i=1;
+		while(i<=n){
+			if(i%2==0){
+				count++;
+			}
+			i++;
+			System.out.println("even number count: "+count);
+		}
+	}
+}
