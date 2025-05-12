@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Operator 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of a:");
+        int a=sc.nextInt();
+		System.out.println("Enter value of b:");
+		int b=sc.nextInt();
+		boolean c=True;
+		boolean d=False;
+		System.out.println("PostIncrement: "+a++);
+		System.out.println("PreIncrement: "+ ++a);
+		System.out.println("PostIncrement: "+a++ + ++b);
+		System.out.println("Logical NOT: "+~c);
+		System.out.println("Bitwise NOT: "+!a);
+		System.out.println("Addition: "+a+b);
+		System.out.println("Subtraction: "+a-b);
+		System.out.println("mul: "+a*b);
+		System.out.println("Div: "+a/b);
+		System.out.println("modulo: "+a%b);
+		System.out.println("equal: "+(a==b));
+		System.out.println("Greater: "+a>b);
+		System.out.println("Less: "+a<b);
+		System.out.println(a+=b);
+		System.out.println(a-=b);
+		System.out.println(a*=b);
+		System.out.println(a/=b);
+		System.out.println(a%=b);
+		System.out.println("logical AND: "+a>b&&a<b);
+		System.out.println("Bitwise AND: "+a>b&a<b);
+		System.out.println("Logical OR: "+a<b||a>b);
+		System.out.println("Bitwise OR: "+a<b|a>b);
+		System.out.println("eft shift: "+a<<b);
+		System.out.println("Right shift: "+a>>b);
+		System.out.println("Right shift: "+a>>>b);
+		System.out.println("Greater equal: "+a>=b);
+		System.out.println("Less equal: "+a<=b);
+		System.out.println(a!=b);
+		String result=(a>b)?"a is big":"b is big";
+	    System.out.println("Ternary: "+result);
+	}
+}

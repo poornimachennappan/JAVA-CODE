@@ -1,0 +1,14 @@
+class String1 
+{
+	public static void main(String[] args) 
+	{
+		String str="Hello";
+		System.out.println("Before concate: "+str);
+		String a=str+" Poorni";
+		System.out.println("After concate:"+a);
+		System.out.println("length:"+a.length());
+		System.out.println("upperCase:"+a.toUpperCase());
+		System.out.println("lowerCase:"+a.toLowerCase());
+        System.out.println("Index: "+a.indexOf("Poorni"));		
+		}
+}

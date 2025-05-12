@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class FirstNonRepeatingChar 
+{
+	public static void main(String[] args) 
+	{
+      Scanner sc=new Scanner(System.in);
+	  System.out.println("Enter the String:");
+	  String str=sc.nextLine();
+	  char[] s1=str.toCharArray();
+	  StringBuilder s2=new StringBuilder();
+	  for(int i=0;i<s1.length;i++){
+		  Boolean unique=true;
+		  for(int j=i+1;j<s1.length;j++){
+			  if(i!=j&&s1[i]==s1[j]){
+				  unique=false;
+				  break;
+	           }
+          }
+		  if(unique){
+			  s2.append(s1[i]);
+		  
+	       System.out.println();
+          }
+       }
+	}
+}

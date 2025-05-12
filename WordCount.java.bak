@@ -1,0 +1,14 @@
+class WordCount
+{
+	public static void main(String[] args) 
+	{   
+		int count=0;
+		String str="timjamfortimsammomtim";
+		String s3=str.split(" ");
+		if(s3.contains("tim")){
+				count++;
+			}
+		
+		System.out.println("Word:"+count++);
+	}
+}

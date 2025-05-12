@@ -1,0 +1,9 @@
+class AccessModifier 
+{
+	private int a=10;
+}
+public static void main(String[] args){
+	AccessModifier b=new AccessModifier();
+	System.out.println(b.a);
+	}
+}

@@ -1,0 +1,24 @@
+class StringCompareMethod 
+{
+	public static void main(String[] args) 
+	{
+		String s1="poorni";
+		String s2="poorni";
+		String s3=new String("poorni");
+		String s4="Adhu";
+		String s5="POORNi";
+		System.out.println("equal:"+s1.equals(s2));
+		System.out.println("equal:"+s1.equals(s3));
+		System.out.println("equal:"+s1.equals(s4));
+		System.out.println("Double equal:"+(s1==s2));
+		System.out.println("Double equal:"+(s1==s3));
+		System.out.println("Double equal:"+(s1==s4));
+		System.out.println("CompareTo:"+s1.compareTo(s2));
+		System.out.println("CompareTo:"+s1.compareTo(s3));
+		System.out.println("CompareTo:"+s1.compareTo(s4));
+		System.out.println("IgnoreEqualCase:"+s1.equalsIgnoreCase(s5));
+		System.out.println("StartWith:"+s1.startsWith("poorni"));
+		System.out.println("EndWith:"+s2.endsWith("Adhu"));
+		
+	}
+}
