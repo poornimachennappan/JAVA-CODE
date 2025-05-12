@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class PrimeNumber
+{
+	public static boolean isPrime(int c){
+		if(c<2){
+			return false;
+		}
+		for(int i=2;i*i<=n;i++){
+			if(c%i==0){
+				return false;
+		}
+	}
+	return true;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter c:");
+		Scanner sc=new Scanner(System.in);
+		int c=sc.nextInt();
+		if(isPrime(c)){
+			System.out.println("Prime Number");
+		}
+		else{
+			System.out.println("Not a Prime Number");
+		}
+
+	}
+}

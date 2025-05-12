@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class LastAndMiddleDigitExtract 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("x:");
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		while(x>0){
+			int c=x%10;
+            int d=(x/10)%10;
+			int e=y%10;
+		}
+			System.out.println("LastDigit:"+c);
+            System.out.println("LastSecondDigit:"+d);
+			System.out.println("LastDigit:"+e);
+			System.out.println("Sum:"+(c+e));
+		
+     }
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class  ReverseNumber
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int a=sc.nextInt();
+		//Approach-1
+		int rev=0;
+		while(a!=0){
+			rev=rev*10+a%10;
+			a=a/10;
+		}
+		System.out.println("Reversed number:"+rev);
+		System.out.println();
+		//Approach-2
+		int b=134556;
+		StringBuilder s1=new StringBuilder();
+		s1.append(b);
+        StringBuilder s2=s1.reverse();
+		System.out.println(s2);
+		System.out.println();
+		//Approach-3
+		StringBuffer s3=new StringBuffer(String.valueOf(b));
+        StringBuffer s4=s3.reverse();
+		System.out.println(s4);
+	}
+}

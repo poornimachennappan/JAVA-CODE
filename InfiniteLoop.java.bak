@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class  InfiniteLoop
+{
+	public static void main(String[] args) 
+	{
+		int i=7;
+		while(i>0){
+			if(i%7==0)
+				System.out.println(i);
+			if(i>=1001)
+				break;
+            i++;  
+			
+		
+		}	
+	}
+}

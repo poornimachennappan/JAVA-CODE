@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class  AmstrongNumber
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value:");
+		int x=sc.nextInt();
+		int ori_num=x;
+		int rev=0;
+		int result=0;
+		int digits=String.valueOf(x).length();
+		while(x>0){
+			rev=x%10;
+			result=result+Math.pow(rev,digits);
+			x=x/10;
+		}
+		if(ori_num==result){
+			System.out.println("AmstrongNumber");
+		}
+        else{
+			System.out.println(" Not AmstrongNumber");
+        }
+	}
+}
